@@ -31,14 +31,15 @@ export default {}
 <style>
 body {
   background-color: #13293d;
-  overflow-x: hidden;
+  overflow-x: none;
 }
 .grid-container {
   display: grid;
   grid-template-columns: 10% 85% 5%;
-  grid-template-rows: repeat(2, 50px);
+  grid-template-rows: 50px 50px;
   height: 100vh;
   grid-gap: 5px;
+  justify-content: center;
 }
 /* .item {
   background: lightblue;
@@ -49,6 +50,7 @@ body {
   grid-column: 1 / span 3;
   grid-row: 1 / span 2;
 }
+
 @media screen and (max-width: 768px) {
 .grid-container {
   display: grid;

@@ -9,6 +9,10 @@ export default {
 </script>
 
 <style>
+body {
+  background-color: #13293d;
+  overflow-x: hidden;
+}
 .email {
   writing-mode: vertical-lr;
   color: #64ffda;
