@@ -5,14 +5,17 @@
       crossorigin="anonymous"
     ></script>
     <div class="grid-container">
-      <div class="social">
-        <Social />
+      <div class="item">
+          <Header />
       </div>
-      <div class="header">
-        <Header />
+      <div class="item">
+          <Social />
       </div>
-      <div class="hero">
-        <Hero />
+      <div class="item">
+          <Hero />
+      </div>
+      <div class="item">
+        <Gmail/>
       </div>
     </div>
   </div>
@@ -31,23 +34,35 @@ body {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 0.3fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1.6fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    'social header header header'
-    'social hero hero hero'
-    'social hero hero hero';
+  grid-template-columns: 10% 85% 5%;
+  grid-template-rows: repeat(2, 50px);
+  height: 100vh;
+  grid-gap: 5px;
 }
-.social {
-  grid-area: social;
-}
-.header {
-  grid-area: header;
-}
-.hero {
-  grid-area: hero;
+/* .item {
+  background: lightblue;
+  padding: 10px;
+  border: 1px solid red;
+} */
+.item:nth-of-type(1) {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
 }
 @media screen and (max-width: 768px) {
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  height: 100vh;
+  grid-gap: 5px;
+}
+.item:nth-of-type(2) {
+  display: none;
+}
+.item:nth-of-type(3) {
+  margin: 10px;
+}
+.item:nth-of-type(4) {
+  display: none;
+}
 }
 </style>

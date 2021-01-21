@@ -1,11 +1,11 @@
 <template>
   <div class="grid-container fixed">
     <div class="favicon">
-      <img
+      <!-- <img
         class="mt-8 pl-8"
         src="https://res.cloudinary.com/dutj1bbos/image/upload/c_scale,w_80/v1611003309/logo-green_usati5.png"
         alt=""
-      />
+      /> -->
     </div>
     <div class="social">
       <div class="social-media">
