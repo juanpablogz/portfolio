@@ -1,7 +1,6 @@
 <template>
   <div class="scroll-container">
     <div
-      id="about"
       class="mt-8"
       v-gsap.fromTo="[
         { opacity: 0, y: -200 },
@@ -19,48 +18,74 @@
       </p>
       <button class="contact">Hablemos</button>
     </div>
-
-    <About/>
-      <!-- work -->
-<div>
-</div>
+    <!-- about -->
+    <About />
+    <!-- end about -->
+    <!-- experience -->
+    <Experience />
+    <!-- end experience -->
+    <!-- work -->
+    <div></div>
     <div class="grid-container-hero flex">
       <div class="image-project">
-          <h2 class="mt-12">Some Things I’ve Built</h2>
-        <div class="hero">
-        </div>
+        <h2 class="mt-12">Some Things I’ve Built</h2>
+        <div class="hero"></div>
       </div>
       <div class="description-project">
         <p class="number mt-16 pl-32">Featured Project</p>
         <p class="number pl-32">OctoProfile</p>
-<div class="h-screen flex items-center">
-    <div class='shadow rounded-md bg-white w-full max-w-lg h-48'>
-        
-        <div class='flex items-center px-5 py-3'>
-            <img class='w-10 h-10 object-cover rounded-full' alt='User avatar' src='https://i.pravatar.cc/200?u=007'>
-            <div class='mx-3'>
-                <p class='text-gray-600'>New Story from <b>Arya Stark</b>, <a class='text-blue-500 hover:text-blue-400 hover:underline'>Read now</a>.</p>
+        <div class="h-screen flex items-center">
+          <div class="shadow rounded-md bg-white w-full max-w-lg h-48">
+            <div class="flex items-center px-5 py-3">
+              <img
+                class="w-10 h-10 object-cover rounded-full"
+                alt="User avatar"
+                src="https://i.pravatar.cc/200?u=007"
+              />
+              <div class="mx-3">
+                <p class="text-gray-600">
+                  New Story from <b>Arya Stark</b>,
+                  <a class="text-blue-500 hover:text-blue-400 hover:underline"
+                    >Read now</a
+                  >.
+                </p>
+              </div>
             </div>
-        </div>
 
-        <hr />
+            <hr />
 
-        <div class='px-5 py-3'>
-            <h3 class="font-bold text-xs" >TAGS</h3>    
-            <!-- This is the tags container -->       
-            <div class='my-3 flex flex-wrap -m-1'>
-                <span class="m-1 bg-gray-200 hover:bg-gray-300 rounded-full px-2 font-bold text-sm leading-loose cursor-pointer" >#winter</span>
-                <span class="m-1 bg-gray-200 hover:bg-gray-300 rounded-full px-2 font-bold text-sm leading-loose cursor-pointer">#stark</span>
-                <span class="m-1 bg-gray-200 hover:bg-gray-300 rounded-full px-2 font-bold text-sm leading-loose cursor-pointer">#gameofthrones</span>
-                <span class="m-1 bg-gray-200 hover:bg-gray-300 rounded-full px-2 font-bold text-sm leading-loose cursor-pointer">#battle</span>
-                <span class="m-1 bg-gray-200 hover:bg-gray-300 rounded-full px-2 font-bold text-sm leading-loose cursor-pointer">#jhonsnow</span>
-                <span class="m-1 bg-gray-200 hover:bg-gray-300 rounded-full px-2 font-bold text-sm leading-loose cursor-pointer">#kinglandings</span>
+            <div class="px-5 py-3">
+              <h3 class="font-bold text-xs">TAGS</h3>
+              <!-- This is the tags container -->
+              <div class="my-3 flex flex-wrap -m-1">
+                <span
+                  class="m-1 bg-gray-200 hover:bg-gray-300 rounded-full px-2 font-bold text-sm leading-loose cursor-pointer"
+                  >#winter</span
+                >
+                <span
+                  class="m-1 bg-gray-200 hover:bg-gray-300 rounded-full px-2 font-bold text-sm leading-loose cursor-pointer"
+                  >#stark</span
+                >
+                <span
+                  class="m-1 bg-gray-200 hover:bg-gray-300 rounded-full px-2 font-bold text-sm leading-loose cursor-pointer"
+                  >#gameofthrones</span
+                >
+                <span
+                  class="m-1 bg-gray-200 hover:bg-gray-300 rounded-full px-2 font-bold text-sm leading-loose cursor-pointer"
+                  >#battle</span
+                >
+                <span
+                  class="m-1 bg-gray-200 hover:bg-gray-300 rounded-full px-2 font-bold text-sm leading-loose cursor-pointer"
+                  >#jhonsnow</span
+                >
+                <span
+                  class="m-1 bg-gray-200 hover:bg-gray-300 rounded-full px-2 font-bold text-sm leading-loose cursor-pointer"
+                  >#kinglandings</span
+                >
+              </div>
             </div>
+          </div>
         </div>
-
-
-    </div>
-</div>
       </div>
     </div>
   </div>
@@ -79,7 +104,10 @@ export default {
 
 <style lang="scss" scoped>
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
+}
+.scroll-container {
+  overflow-x: hidden;
 }
 body {
   overflow: hidden;
@@ -88,7 +116,7 @@ body {
   color: #64ffda;
 }
 .color {
-    color: #64ffda;
+  color: #64ffda;
 }
 .big-title {
   color: #8892b0;
@@ -136,25 +164,27 @@ body {
 }
 
 .demo_wrap {
-    position: relative;
-    overflow: hidden;
-    padding: 16px;
-    border: 1px dashed green;
+  position: relative;
+  overflow: hidden;
+  padding: 16px;
+  border: 1px dashed green;
 }
 .demo_wrap h1 {
-    padding: 100px;
-    position: relative;
-    z-index: 2;
+  padding: 100px;
+  position: relative;
+  z-index: 2;
 }
 .demo_wrap img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    opacity: 0.6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
 }
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -168,9 +198,9 @@ body {
   line-height: 1.5;
 }
 
-.hero { 
+.hero {
   cursor: pointer;
-  position: relative; 
+  position: relative;
   height: 300px;
   width: 100%;
   display: flex;
@@ -178,9 +208,9 @@ body {
   justify-content: center;
   background-image: url('https://placekitten.com/1200/800');
   background-size: cover;
-  
+
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0px;
     right: 0px;
@@ -190,20 +220,20 @@ body {
   }
 }
 .hero:hover {
-        &::before {
-    content: "";
+  &::before {
+    content: '';
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    cursor:pointer;
-    background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
   }
 }
 h1 {
   position: relative;
-  color: #ffffff;  
+  color: #ffffff;
   font-size: 14rem;
   line-height: 0.9;
   text-align: center;
@@ -215,11 +245,14 @@ h1 {
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
-    "image-project image-project description-project description-project"
-    "image-project image-project description-project description-project"
-    "image-project image-project description-project description-project";
+    'image-project image-project description-project description-project'
+    'image-project image-project description-project description-project'
+    'image-project image-project description-project description-project';
 }
-.image-project { grid-area: image-project; }
-.description-project { grid-area: description-project; }
-
+.image-project {
+  grid-area: image-project;
+}
+.description-project {
+  grid-area: description-project;
+}
 </style>

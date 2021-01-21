@@ -31,6 +31,7 @@ export default {}
 <style>
 body {
   background-color: #13293d;
+  overflow-x: hidden;
 }
 .grid-container {
   display: grid;

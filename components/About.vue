@@ -33,31 +33,25 @@
             Here are a few technologies I've been working with recently:
           </h2>
           <div class="flex">
-            <ul class="text pr-4">
+            <ul class="text-technologies pr-4">
               <li> <i class="fas fa-code color pr-2"></i>JavasScript</li>
-              <li> <i class="fas fa-code color pr-2"></i> JavasScript</li>
-              <li> <i class="fas fa-code color pr-2"></i>JavasScript</li>
-              <li> <i class="fas fa-code color pr-2"></i>JavasScript</li>
+              <li> <i class="fas fa-code color pr-2"></i>HTML/css</li>
+              <li> <i class="fas fa-code color pr-2"></i>TailwindCss</li>
             </ul>
-            <ul class="text">
-              <li> <i class="fas fa-code color pr-2"></i>JavasScript</li>
-              <li> <i class="fas fa-code color pr-2"></i>JavasScript</li>
-              <li> <i class="fas fa-code color pr-2"></i>JavasScript</li>
-              <li> <i class="fas fa-code color pr-2"></i>JavasScript</li>
+            <ul class="text-technologies">
+              <li> <i class="fas fa-code color pr-2"></i> Vue js</li>
+              <li> <i class="fas fa-code color pr-2"></i>Nuxt</li>
+              <li> <i class="fas fa-code color pr-2"></i>Quasar</li>
             </ul>
           </div>
         </div>
       </div>
   </div>
-
-
   <div>
-      <div class="image mt-32">
-        <img
-          class="mt-8 pl-8 op"
-          src="https://res.cloudinary.com/dutj1bbos/image/upload/c_scale,w_300/v1594870419/carousel-3_uwrxl2.png"
-          alt=""
-        />
+      <div class="pl-12 br-2"> 
+      <div class="about-me lg:mt-32">
+          <img class="image" src="https://res.cloudinary.com/dutj1bbos/image/upload/c_scale,h_350,w_400/v1610036619/25-04_unchp6.jpg" alt="">
+      </div>
       </div>
   </div>
 </div>
@@ -70,12 +64,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .text {
   color: #8892b0;
   margin: 20px 0px 0px;
   min-width: 500px;
-max-width: 500px;
+  max-width: 500px;
 }
 .subtitle {
   color: white;
@@ -83,8 +77,65 @@ max-width: 500px;
   font-size: 20px;
   font-weight: bold;
 }
+.text-technologies {
+  color: #8892b0;
+  margin: 20px 0px 0px;
+
+}
+.color {
+    color: #64ffda;
+}
 .number {
   color: #64ffda;
   font-size: 20px;
+}
+.about-me {
+  cursor: pointer;
+  position: relative; 
+  height: 350px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(100, 255, 218, 0.5);
+  }
+}
+.about-me:hover {
+        &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    cursor:pointer;
+    background-color: rgba(255,255,255,0.5);
+  }
+}
+@media (max-width: 600px) {
+.text {
+  min-width: 400px;
+  max-width: 400px;
+}
+}
+@media (max-width: 400px) {
+.text {
+  min-width: 340px;
+  max-width: 340px;
+}
+}
+@media (max-width: 320px) {
+.text {
+  min-width: 300px;
+  max-width: 300px;
+}
 }
 </style>
