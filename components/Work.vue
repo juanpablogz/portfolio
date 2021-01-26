@@ -2,35 +2,37 @@
   <div>
     <div class="flex mt-32 mb-12">
       <p class="number">01.</p>
-      <p class="subtitle pl-2 mt">About Me</p>
+      <p class="subtitle pl-2 mt">Proyectos realizados </p>
+
     </div>
     <div class="container">
-        <div class="item level-1 work">
-            <img src="https://static.platzi.com/media/public/uploads/landing_1c67bffd-7af0-4bd0-8370-d640b64c7842.jpg"
+        <div class="item level-1 work" >
+            <img  src="https://static.platzi.com/media/public/uploads/landing_1c67bffd-7af0-4bd0-8370-d640b64c7842.jpg"
                 alt="">
         </div>
 
-        <div class="item level-1 work">
+        <div class="item level-1 work" @click="redirect(0)">
             <img src="https://res.cloudinary.com/dutj1bbos/image/upload/v1611333027/screenshot-estrellarestaurante-com-1611332998500_nosdgy.png"
                 alt="">
+
         </div>
-        <div class="item level-2 work">
+        <div class="item level-2 work" @click="redirect(1)">
             <img src="https://res.cloudinary.com/dutj1bbos/image/upload/v1611334029/screenshot-zealous-mayer-c3bddc-netlify-app-1611334019534_rnakpp.png"
                 alt="">
         </div>
-        <div class="item level-3 work">
+        <div class="item level-3 work" @click="redirect(2)">
             <img src="https://res.cloudinary.com/dutj1bbos/image/upload/v1611263920/colombia_jkhpsk.png"
                 alt="">
         </div>
-                <div class="item level-1 work">
+                <div class="item level-1 work" @click="redirect(3)">
             <img src="https://res.cloudinary.com/dutj1bbos/image/upload/v1611334397/screenshot-www-especialistaencasa-com-1611334362535_jr7pl9.png"
                 alt="">
         </div>
-        <div class="item level-2 work">
+        <div class="item level-2 work" @click="redirect(4)">
             <img src="https://res.cloudinary.com/dutj1bbos/image/upload/v1611334933/screenshot-exchange25-netlify-app-1611334909363_zpav5a.png"
                 alt="">
         </div>
-        <div class="item level-3 work">
+        <div class="item level-3 work" @click="redirect(5)">
             <img src="https://res.cloudinary.com/dutj1bbos/image/upload/v1611334578/screenshot-juego25-netlify-app-1611334565950_wsuhou.png"
                 alt="">
         </div>
@@ -47,7 +49,23 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      url: ['http://estrellarestaurante.com/', 'https://zealous-mayer-c3bddc.netlify.app/',
+            'https://trusting-snyder-300ce9.netlify.app/', 'https://www.especialistaencasa.com/',
+            'https://exchange25.netlify.app/', 'https://juego25.netlify.app/'],
+
+    }
+  },
+  created() {},
+  computed: {},
+  methods: {
+    redirect (id) {
+    window.open(`${this.url[id]}`, '_blank');
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -124,7 +142,7 @@ export default {}
     bottom: 0px;
     left: 0px;
     cursor:pointer;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.5);
   }
 }
 </style>

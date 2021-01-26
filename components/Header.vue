@@ -37,7 +37,7 @@
               <a :href="`#${value}`" class="letter pr-8">{{ value }}</a>
             </div>
           </div>
-          <button class="contact hidd">Resume</button>
+          <button class="contact hidd">Resumen</button>
         </ul>
       </div>
 
@@ -65,7 +65,7 @@ import { mapGetters } from 'vuex'
 export default {
   data() {
     return {
-      category: ['about', 'experience', 'work'],
+      category: ['Inicio', 'Sobre mi', 'proyectos'],
       isOpen: false,
     }
   },

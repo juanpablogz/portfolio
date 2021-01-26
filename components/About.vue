@@ -14,23 +14,20 @@
           <!-- about -->
           <div class="flex mt-32">
             <p class="number">01.</p>
-            <p class="subtitle pl-2 mt">About Me</p>
+            <p class="subtitle pl-2 mt">Sobre mi </p>
           </div>
           <h2 class="text">
-            Hello! I'm Brittany, a software engineer based in Boston, MA.
+            Hola mi nombre es juan pablo, soy desarrollador de software, vivo en medellin,colombia.
           </h2>
           <h2 class="text">
-            enjoy creating things that live on the internet, whether that be
-            websites, applications, or anything in between. My goal is to always
-            build products that provide pixel-perfect, performant experiences.
+            Desarrollo aplicaciones web, principalmente con Vuejs, Quasar y NuxtJs, lo cual me permite realizar
+            Ssr, PWA y aplicaciones mobile para android y ios
           </h2>
           <h2 class="text">
-            Shortly after graduating from Northeastern University, I joined the
-            engineering team at Upstatement where I work on a wide variety of
-            interesting and meaningful projects on a daily basis.
+            En el backend he realizado Api rest con ruby on rails 
           </h2>
           <h2 class="text">
-            Here are a few technologies I've been working with recently:
+            Las principales tecnologias que conozco son: 
           </h2>
           <div class="flex">
             <ul class="text-technologies pr-4">
@@ -39,7 +36,7 @@
               <li> <i class="fas fa-code color pr-2"></i>TailwindCss</li>
             </ul>
             <ul class="text-technologies">
-              <li> <i class="fas fa-code color pr-2"></i> Vue js</li>
+              <li> <i class="fas fa-code color pr-2"></i> Vue js, Vuex</li>
               <li> <i class="fas fa-code color pr-2"></i>Nuxt</li>
               <li> <i class="fas fa-code color pr-2"></i>Quasar</li>
             </ul>
