@@ -33,7 +33,7 @@
                 alt="">
         </div>
         <div class="item level-3 work" @click="redirect(5)">
-            <img src="https://res.cloudinary.com/dutj1bbos/image/upload/v1611334578/screenshot-juego25-netlify-app-1611334565950_wsuhou.png"
+            <img src="https://res.cloudinary.com/dutj1bbos/image/upload/v1618506472/Captura_de_Pantalla_2021-04-15_a_la_s_12.06.39_p._m._ghlpol.png"
                 alt="">
         </div>
         <!-- <div class="item level-2">
@@ -54,7 +54,7 @@ export default {
     return {
       url: ['http://estrellarestaurante.com/', 'https://zealous-mayer-c3bddc.netlify.app/',
             'https://trusting-snyder-300ce9.netlify.app/', 'https://www.especialistaencasa.com/',
-            'https://exchange25.netlify.app/', 'https://juego25.netlify.app/'],
+            'https://exchange25.netlify.app/', 'https://www.since.love/'],
 
     }
   },

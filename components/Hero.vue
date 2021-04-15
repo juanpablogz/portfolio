@@ -16,7 +16,9 @@
         todo lo que conlleva, mis tecnologias favoritas son Vuejs y ruby on
         rails.
       </p>
-      <button class="contact">Hablemos</button>
+      <button class="contact" >
+              <a href="https://wa.link/m14kt0" class="letter" target="_blank">Hablemos</a>
+      </button>
     </div>
     <!-- about -->
     <About />

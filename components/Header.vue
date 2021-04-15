@@ -29,15 +29,17 @@
           </div>
           <div
             class="hidd"
-            v-for="(value, key) in category"
-            v-bind:key="value.id"
           >
             <div class="flex">
-              <p class="pr-4 color">0{{ key + 1 }}.</p>
-              <a :href="`#${value}`" class="letter pr-8">{{ value }}</a>
+              <p class="pr-4 color">1.</p>
+              <a href="https://juanpablogz-d6d32.web.app/" class="letter pr-8" target="_blank">Blog</a>
+              <p class="pr-4 color">2.</p>
+              <a href="https://curriculum-jpgz.netlify.app/" class="letter pr-8" target="_blank">curriculum</a>
+              <p class="pr-4 color">3.</p>
+              <a href="https://wa.link/m14kt0" class="letter pr-8" target="_blank">Hablemos</a>
             </div>
           </div>
-          <button class="contact hidd">Resumen</button>
+          
         </ul>
       </div>
 
@@ -49,10 +51,14 @@
           { opacity: 1, y: 0, duration: 2 },
         ]"
       >
-        <div v-for="(value, key) in category" v-bind:key="value.id">
+        <div>
           <div class="flex">
-            <p class="pr-2 color-mobile">0{{ key + 1 }}.</p>
-            <a :href="`#${value}`" class="letter-mobile pr-4">{{ value }}</a>
+            <p class="pr-2 color-mobile">1.</p>
+            <a href="https://juanpablogz-d6d32.web.app/" class="letter-mobile pr-4" target="_blank">Blog</a>
+            <p class="pr-2 color-mobile">2.</p>
+            <a href="https://curriculum-jpgz.netlify.app/" class="letter-mobile pr-4" target="_blank">curriculum</a>
+            <p class="pr-2 color-mobile">3.</p>
+            <a href="https://wa.link/m14kt0" class="letter-mobile pr-4" target="_blank">Hablemos</a>
           </div>
         </div>
       </ul>

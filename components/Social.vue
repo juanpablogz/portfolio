@@ -9,9 +9,8 @@
     </div>
     <div class="social">
       <div class="social-media">
-        <i class="fab fa-github fa-2x color mb-4"></i>
-        <i class="fab fa-linkedin fa-2x color  mb-4"></i>
-        <i class="fab fa-facebook fa-2x color  mb-4"></i>
+        <a class="fab fa-github fa-2x color mb-4" href="https://github.com/juanpablogz" target="_blank"></a>
+        <a class="fab fa-linkedin fa-2x color  mb-4" href="https://www.linkedin.com/in/juan-pablo-b9a50a17b/" target="_blank"></a>
       </div>
     </div>
   </div>
