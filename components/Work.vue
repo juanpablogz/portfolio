@@ -2,7 +2,7 @@
   <div>
     <div class="flex mt-32 mb-12">
       <p class="number">01.</p>
-      <p class="subtitle pl-2 mt">Proyectos realizados </p>
+      <p class="subtitle pl-2 mt">Proyectos en los que he participado </p>
 
     </div>
     <div class="container">
