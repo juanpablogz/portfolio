@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <header class="pr-8 mt-8">
+    <header class="pr-4 mt-4">
       <div class="lg:hidden">
         <div style="display: flex; justify-content: flex-end">
           <!-- <button
@@ -42,6 +42,26 @@
           
         </ul>
       </div>
+
+      <!-- <ul
+        class="flex header fixed"
+        :class="isOpen ? 'block' : 'hidden'"
+        v-gsap.fromTo="[
+          { opacity: 0, y: -200 },
+          { opacity: 1, y: 0, duration: 2 },
+        ]"
+      >
+        <div>
+          <div class="flex">
+            <p class="pr-2 color-mobile">1.</p>
+            <a href="https://juanpablogz-d6d32.web.app/" class="letter-mobile pr-4" target="_blank">Blog</a>
+            <p class="pr-2 color-mobile">2.</p>
+            <a href="https://curriculum-jpgz.netlify.app/" class="letter-mobile pr-4" target="_blank">curriculum</a>
+            <p class="pr-2 color-mobile">3.</p>
+            <a href="https://wa.link/m14kt0" class="letter-mobile pr-4" target="_blank">Hablemos</a>
+          </div>
+        </div>
+      </ul> -->
     </header>
   </div>
 </template>

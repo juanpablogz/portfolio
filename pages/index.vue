@@ -48,7 +48,7 @@ body {
 } */
 .item:nth-of-type(1) {
   grid-column: 1 / span 3;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -66,10 +66,6 @@ body {
 }
 .item:nth-of-type(4) {
   display: none;
-}
-.item:nth-of-type(1) {
-  grid-column: 1 / span 3;
-  grid-row: 1 / span 1;
 }
 }
 
