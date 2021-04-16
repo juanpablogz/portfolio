@@ -194,7 +194,12 @@ h1 {
 }
 @media (max-width: 600px) {
 .scroll-container {
-  padding: 20px;
+  padding-left: 20px;
+}
+}
+@media (max-width: 320px) {
+.scroll-container {
+  padding-left: 60px;
 }
 }
 </style>

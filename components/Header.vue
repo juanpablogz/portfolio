@@ -27,9 +27,6 @@
               alt=""
             />
           </div>
-          <div
-            class=""
-          >
             <div class="flex">
               <p class="pr-4 color">1.</p>
               <a href="https://juanpablogz-d6d32.web.app/" class="letter pr-8" target="_blank">Blog</a>
@@ -38,7 +35,6 @@
               <p class="pr-4 color">3.</p>
               <a href="https://wa.link/m14kt0" class="letter pr-8" target="_blank">Hablemos</a>
             </div>
-          </div>
           
         </ul>
       </div>

@@ -154,4 +154,9 @@ export default {
     background-color: rgba(255,255,255,0.5);
   }
 }
+@media (max-width: 320px) {
+.container {
+  padding-left: 40px;
+}
+}
 </style>
