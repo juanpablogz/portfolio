@@ -3,7 +3,7 @@
     <header class="pr-8 mt-8">
       <div class="lg:hidden">
         <div style="display: flex; justify-content: flex-end">
-          <button
+          <!-- <button
             @click="isOpen = !isOpen"
             class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400"
           >
@@ -15,7 +15,7 @@
               <title>Menu</title>
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
             </svg>
-          </button>
+          </button> -->
         </div>
       </div>
       <div>
@@ -28,7 +28,7 @@
             />
           </div>
           <div
-            class="hidd"
+            class=""
           >
             <div class="flex">
               <p class="pr-4 color">1.</p>
@@ -42,26 +42,6 @@
           
         </ul>
       </div>
-
-      <ul
-        class="flex header fixed"
-        :class="isOpen ? 'block' : 'hidden'"
-        v-gsap.fromTo="[
-          { opacity: 0, y: -200 },
-          { opacity: 1, y: 0, duration: 2 },
-        ]"
-      >
-        <div>
-          <div class="flex">
-            <p class="pr-2 color-mobile">1.</p>
-            <a href="https://juanpablogz-d6d32.web.app/" class="letter-mobile pr-4" target="_blank">Blog</a>
-            <p class="pr-2 color-mobile">2.</p>
-            <a href="https://curriculum-jpgz.netlify.app/" class="letter-mobile pr-4" target="_blank">curriculum</a>
-            <p class="pr-2 color-mobile">3.</p>
-            <a href="https://wa.link/m14kt0" class="letter-mobile pr-4" target="_blank">Hablemos</a>
-          </div>
-        </div>
-      </ul>
     </header>
   </div>
 </template>
