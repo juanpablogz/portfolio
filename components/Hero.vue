@@ -2,10 +2,6 @@
   <div class="scroll-container">
     <div
       class="mt-8"
-      v-gsap.fromTo="[
-        { opacity: 0, y: -200 },
-        { opacity: 1, y: 0, duration: 2 },
-      ]"
     >
       <p class="hero-1">Hola, mi nombre es</p>
       <h2 class="big-title">Juan pablo.</h2>
@@ -28,6 +24,7 @@
     <!-- end experience -->
     <!-- work -->
     <Work/>
+    <Footer/>
   </div>
 </template>
 
@@ -59,7 +56,7 @@ body {
   color: #64ffda;
 }
 .big-title {
-  color: #8892b0;
+  color: #FFFCF2;
   margin: 0px;
   font-size: clamp(40px, 8vw, 80px);
 }
@@ -194,5 +191,10 @@ h1 {
 }
 .description-project {
   grid-area: description-project;
+}
+@media (max-width: 600px) {
+.scroll-container {
+  padding: 20px;
+}
 }
 </style>

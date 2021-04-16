@@ -6,11 +6,11 @@
         <div
           id="experience"
           class="mt-16"
-          v-gsap.fromTo="[
+        >
+        <!-- v-gsap.fromTo="[
             { opacity: 0, y: -200 },
             { opacity: 1, y: 0, duration: 2 },
-          ]"
-        >
+          ]" -->
           <!-- about -->
           <div class="flex mt-32">
             <p class="number">01.</p>
@@ -46,8 +46,8 @@
   </div>
   <div>
       <div class="pl-12 br-2"> 
-      <div class="about-me lg:mt-32">
-          <img class="image" src="https://res.cloudinary.com/dutj1bbos/image/upload/c_scale,h_350,w_400/v1610036619/25-04_unchp6.jpg" alt="">
+      <div class=" lg:mt-32">
+          <img class="image" src="https://res.cloudinary.com/dutj1bbos/image/upload/v1618530039/safar-safarov-LKsHwgzyk7c-unsplash_tacx5f.jpg" alt="">
       </div>
       </div>
   </div>
@@ -69,7 +69,7 @@ export default {
   max-width: 500px;
 }
 .subtitle {
-  color: white;
+  color: #FFFCF2;
   margin: 0px;
   font-size: 20px;
   font-weight: bold;
@@ -92,6 +92,7 @@ export default {
   height: 350px;
   width: 400px;
   display: flex;
+  border-radius: 20px;
   align-items: center;
   justify-content: center;
   background-size: cover;
@@ -102,7 +103,7 @@ export default {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(100, 255, 218, 0.5);
+    // background-color: rgba(100, 255, 218, 0.5);
   }
 }
 .about-me:hover {

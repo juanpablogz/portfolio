@@ -1,5 +1,5 @@
 <template>
-        <div class="email mt-32">juanpablogomezzapata@gmail.com</div>
+        <a class="email mt-32">juanpablogomezzapata@gmail.com</a>
 </template>
 
 <script>

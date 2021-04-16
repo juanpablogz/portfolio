@@ -98,7 +98,7 @@ s
   color: #07beb8;
 }
 .letter {
-  color: #8892b0;
+  color: #FFFCF2;
   cursor: pointer;
 }
 .color-mobile {
@@ -129,6 +129,11 @@ s
 }
 @media screen and (max-width: 768px) {
   .hidd {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .logo {
     display: none;
   }
 }
