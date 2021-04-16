@@ -2,7 +2,7 @@
     <div>
 <div class="lg:flex">
   <div>
-      <div class="description">
+      <div class="">
         <div
           id="experience"
           class="mt-16"
@@ -26,7 +26,13 @@
           <h2 class="text">
             En el backend he realizado Api rest con ruby on rails 
           </h2>
-          <h2 class="text">
+        </div>
+      </div>
+  </div>
+  <div>
+      <div class="br-2"> 
+      <div class=" lg:mt-40 desktop">
+          <h2 class="text mt-12">
             Las principales tecnologias que conozco son: 
           </h2>
           <div class="flex">
@@ -41,13 +47,6 @@
               <li> <i class="fas fa-code color pr-2"></i>Quasar</li>
             </ul>
           </div>
-        </div>
-      </div>
-  </div>
-  <div>
-      <div class="pl-12 br-2"> 
-      <div class=" lg:mt-32">
-          <img class="image" src="https://res.cloudinary.com/dutj1bbos/image/upload/v1618530039/safar-safarov-LKsHwgzyk7c-unsplash_tacx5f.jpg" alt="">
       </div>
       </div>
   </div>
@@ -117,6 +116,13 @@ export default {
     cursor:pointer;
     background-color: rgba(255,255,255,0.5);
   }
+}
+
+@media (min-width: 600px) {
+.desktop {
+    margin-top: 11rem;
+    padding-left: 75px;
+}
 }
 @media (max-width: 600px) {
 .text {

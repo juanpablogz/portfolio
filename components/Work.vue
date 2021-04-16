@@ -61,7 +61,7 @@
 export default {
   data() {
     return {
-      url: ['http://estrellarestaurante.com/', 'https://zealous-mayer-c3bddc.netlify.app/',
+      url: ['http://estrellarestaurante.com/', 'https://juego25.netlify.app/',
             'https://trusting-snyder-300ce9.netlify.app/', 'https://www.especialistaencasa.com/',
             'https://exchange25.netlify.app/', 'https://www.since.love/'],
 
