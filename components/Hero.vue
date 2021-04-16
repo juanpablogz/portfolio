@@ -199,7 +199,7 @@ h1 {
 }
 @media (max-width: 320px) {
 .scroll-container {
-  padding-left: 60px;
+  padding-left: 40px;
 }
 }
 </style>

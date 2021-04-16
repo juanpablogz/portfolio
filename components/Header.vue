@@ -27,13 +27,13 @@
               alt=""
             />
           </div>
-            <div class="flex">
-              <p class="pr-4 color">1.</p>
-              <a href="https://juanpablogz-d6d32.web.app/" class="letter pr-8" target="_blank">Blog</a>
-              <p class="pr-4 color">2.</p>
-              <a href="https://curriculum-jpgz.netlify.app/" class="letter pr-8" target="_blank">curriculum</a>
-              <p class="pr-4 color">3.</p>
-              <a href="https://wa.link/m14kt0" class="letter pr-8" target="_blank">Hablemos</a>
+            <div class="flex ">
+              <p class="xl:pr-4  color padd">1.</p>
+              <a href="https://juanpablogz-d6d32.web.app/" class="letter xl:pr-8 padd" target="_blank">Blog</a>
+              <p class="xl:pr-4  color padd">2.</p>
+              <a href="https://curriculum-jpgz.netlify.app/" class="letter xl:pr-8 padd" target="_blank">curriculum</a>
+              <p class="xl:pr-4  color padd">3.</p>
+              <a href="https://wa.link/m14kt0" class="letter xl:pr-8 padd" target="_blank">Hablemos</a>
             </div>
           
         </ul>
@@ -131,6 +131,9 @@ s
 @media (max-width: 600px) {
   .logo {
     display: none;
+  }
+  .padd {
+    padding-right: 10px;
   }
 }
 </style>
